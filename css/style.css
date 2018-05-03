@@ -1,0 +1,50 @@
+h1 {
+    color: #009999;
+    font-family: 'Patrick Hand', cursive;
+    font-weight:lighter;
+    font-size: 5em;
+    letter-spacing: 10px;
+    padding-top: 0.5em;
+    text-align:center;
+}
+h2 {
+    font-family: 'Patrick Hand', cursive;
+    padding-bottom: 1em;
+    font-weight:normal;
+    font-size: 2em;
+    text-align:center;
+}
+
+.container {
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 100px;
+    z-index: 101;
+    justify-content: center;
+    text-align: center;
+}
+.button {
+    font-family: 'Patrick Hand', cursive;
+    min-width: 60px;
+    z-index:101;
+    margin: 13px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px solid #33cccc;
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+.button:hover .link{
+    color:#33cccc;
+    font-weight:light;
+}
+
+.link {
+    color: blue; 
+    text-decoration: none;
+}
