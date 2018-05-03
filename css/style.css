@@ -1,14 +1,15 @@
 h1 {
-    color: #009999;
+    color: #0033cc;
     font-family: 'Patrick Hand', cursive;
     font-weight:lighter;
     font-size: 5em;
     letter-spacing: 10px;
     padding-top: 0.5em;
+    margin-bottom: 0em;
     text-align:center;
 }
 h2 {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Homenaje', sans-serif;
     padding-bottom: 1em;
     font-weight:normal;
     font-size: 2em;
@@ -36,8 +37,8 @@ h2 {
     position: relative;
     overflow: hidden;
     color: white;
-    letter-spacing: 3px;
-    font-size: 2em;
+    letter-spacing: 2px;
+    font-size: 1.5em;
 }
 .button:hover .link{
     color:#33cccc;
