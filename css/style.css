@@ -1,9 +1,15 @@
+#body{
+    height: 100%;
+    width:100%;
+    overflow-x: hidden;
+}
+
 h1 {
     color: #0033cc;
     font-family: 'Patrick Hand', cursive;
     font-weight:lighter;
     font-size: 5em;
-    letter-spacing: 10px;
+    letter-spacing: .05em;
     padding-top: 0.5em;
     margin-bottom: 0em;
     text-align:center;
@@ -15,37 +21,81 @@ h2 {
     font-size: 2em;
     text-align:center;
 }
-
+nav.topbar {
+    background-color: #ebebeb;
+    position: fixed;
+    width:100%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: 2em;
+    z-index: 100;
+    max-height: 3em;
+}
+.buttontop {
+    font-family: 'Comfortaa', cursive;
+    display: inline-flex;
+    border: none;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    letter-spacing: 2px;
+}
+.buttontop:hover .linktop{
+    text-decoration:none;
+    color: black;
+}
+.linktop{
+    color: #002699;
+    text-decoration:none;
+}
+.topbar #name {
+    float: left;
+}
+.topbar #projects {
+    float: right;
+}
 .container {
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-top: 100px;
+    padding-left: 5em;
+    padding-right: 5em;
     z-index: 101;
     justify-content: center;
     text-align: center;
 }
-.button {
+.container #intro{
+    padding-top: 6em;
+}
+.container #buttonLinks{
+    margin-top: 100em;
+}
+
+.button{
     font-family: 'Patrick Hand', cursive;
-    min-width: 60px;
-    z-index:101;
+    min-width: 2em;
+    z-index: 101;
     margin: 13px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: .35em;
+    padding-left: 1em;
+    padding-right: 1em;
     border: 3px solid #33cccc;
     display: inline-flex;
     position: relative;
     overflow: hidden;
     color: white;
-    letter-spacing: 2px;
-    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-size: 1.7em;
 }
 .button:hover .link{
     color:#33cccc;
     font-weight:light;
 }
 
-.link {
+.link{
     color: blue; 
-    text-decoration: none;
+    text-decoration:none;
 }
