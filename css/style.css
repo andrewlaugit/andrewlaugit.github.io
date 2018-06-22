@@ -1,9 +1,10 @@
 #body{
+    border: none;
+    margin: none;
     height: 100%;
     width:100%;
     overflow-x: hidden;
 }
-
 h1 {
     color: #0033cc;
     font-family: 'Patrick Hand', cursive;
@@ -21,44 +22,53 @@ h2 {
     font-size: 2em;
     text-align:center;
 }
-nav.topbar {
-    background-color: #ebebeb;
+nav.top-bar {
+    background-color: none;
     position: fixed;
     width:100%;
     top: 0;
     left: 0;
-    padding: 0;
+    padding-top: 0.25em;
     border: none;
     margin: 0;
     font-size: 2em;
-    z-index: 100;
-    max-height: 3em;
+    z-index: 101;
+    height: 2em;
 }
-.buttontop {
+.button-top a {
+    max-height: 1.5em;
+    max-width: 5em;
+    text-decoration: none;
     font-family: 'Comfortaa', cursive;
     display: inline-flex;
     border: none;
-    padding: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 0.25em;
+    padding-left: 3em;
+    padding-right: 3em;
     position: relative;
     overflow: hidden;
     color: black;
     letter-spacing: 2px;
+    color: #002699;
 }
-.buttontop:hover .linktop{
-    text-decoration:none;
+.top-logo>img { 
+    width: auto;
+    height: 1.5em;
+}
+.button-top:hover{
     color: black;
 }
-.linktop{
-    color: #002699;
-    text-decoration:none;
-}
-.topbar #name {
+.top-bar #name-logo {
     float: left;
 }
-.topbar #projects {
+.top-bar #projects-icon {
     float: right;
+}
+#intro {
+    padding-top: 5em;
+}
+#button-links{
+    padding-bottom: 6em;
 }
 .container {
     padding-left: 5em;
@@ -67,14 +77,7 @@ nav.topbar {
     justify-content: center;
     text-align: center;
 }
-.container #intro{
-    padding-top: 6em;
-}
-.container #buttonLinks{
-    margin-top: 100em;
-}
-
-.button{
+.button {
     font-family: 'Patrick Hand', cursive;
     min-width: 2em;
     z-index: 101;
@@ -94,8 +97,65 @@ nav.topbar {
     color:#33cccc;
     font-weight:light;
 }
-
 .link{
     color: blue; 
     text-decoration:none;
 }
+#projects-intro{
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    font-weight:lighter;
+    font-size: 3em;
+    letter-spacing: .02em;
+    position: relative;
+}
+.projects-title>p{
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+}
+.projects-title>img{
+    padding-top: .5em;
+    bottom: 0;
+    max-height: 1.5em;
+    width:auto;
+}
+hr {
+    width: 75%;
+    size: 10px;
+    float: center;
+}
+.container1 {
+    z-index: 101;
+    padding: 0 5em 0 5em;
+    margin: 0 10% 0 10%;
+    font-family: 'Homenaje', sans-serif;
+    font-weight:normal;
+    font-size: 2em;
+    text-align: left; 
+}
+.container1 h3:first-of-type, h4:first-of-type {
+    -webkit-margin-before:0em;
+}
+h3 {
+    -webkit-margin-after:0em;
+    float: left;
+    text-transform: uppercase;
+}
+h4 {
+    -webkit-margin-after:0em;
+    float: right;
+    font-weight: lighter;
+}
+.container1 hr{
+    visibility: hidden;
+    width: 100%;
+}
+.container1 p{
+    -webkit-margin-before:0em;
+    -webkit-margin-after: 1.5em;
+}
+.container1 p::first-line{
+    color:blue;
+}
+
+

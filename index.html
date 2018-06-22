@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1>
-        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Homenaje" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
@@ -11,20 +13,22 @@
         <link rel="icon" href="images/name.png">
     </head>
     <body>
-        <div id="top"></div>
-        <nav class="topbar">
-            <div class="buttontop" id="name">
-                <a href="#top" class="linktop">Andrew Lau</a>           
+        <nav class="top-bar">
+            <div class="button-top" id="name-logo">
+                <a class="top-logo" href="#top">
+                    <img src="images/name.png">   
+                </a>
             </div>
-            <div class="buttontop" id="projects">
-                <a href="#" class="linktop">Projects</a>
+            <div class="button-top" id="projects-icon">
+                <a href="#projects">Projects</a>
             </div>
         </nav>
-        <div class="container" id="intro">
+        <a name="top"></a>
+        <section class="container" id="intro">
             <h1>Andrew Lau</h1>
             <h2>Computer Engineering Student at the University of Toronto</h2>
-        </div>
-        <div class="container" id="buttonLinks">
+        </section>
+        <section class="container" id="button-links">
             <div class="button">
                 <a href="AndrewResume.pdf" target="_blank" class="link">
                     Resume
@@ -36,19 +40,36 @@
                 </a>
             </div>
             <div class="button">
-                    <a href="https://github.com/andrewlaugit" target="_blank" class="link">
-                        Github
-                    </a>
-                </div>
-            
+                <a href="https://github.com/andrewlaugit" target="_blank" class="link">
+                    Github
+                </a>
+            </div>
             <div class="button">
                 <a href="mailto:andrewlau@hotmail.ca?" class="link">
                      Email
                 </a>
             </div>
-        </div>
-        <div class="container">
-            <p>hi</p>
-        </div>
+        </section>
+        <section class="container" id="projects-intro">
+            <div class="projects-title" id="projects-title">
+                <p>Projects</p>
+                <img src="images/arrow.png">
+                <hr><a name="projects"></a>
+            </div>
+        </section>
+        <section class="container" id="projects-list">
+            <div class="container1" id="website">
+                <h3>Personal Website</h3>
+                <h4>andrewlaugit.github.io </h4>
+                <hr>
+                <p>HTML | CSS | JavaScript <br> I created this website as a place to dsiplay my projects and as a way to self-learn web languages.</p>
+            </div>
+            <div class="container1" id="stepper">
+                <h3>Automatic Fitbit Stepper</h3>
+                <h4>asdfasdfasdf</h4>
+                <hr>
+                <p>Java | Fitbit API <br> Created to automatically enter steps and calorie data for daily activites</p>
+            </div>
+        </section>        
     </body>
 </html>
