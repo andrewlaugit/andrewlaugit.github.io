@@ -1,3 +1,26 @@
+:root {
+    --bg-colour: #FEFFDF;
+    --dot-colour: #CEF3FF;
+
+    --square-size: 5px;
+    --square-space: 100px;
+}
+
+body {
+	background:
+		linear-gradient(90deg, var(--bg-colour) calc(var(--square-space) - var(--square-size)), transparent 1%) top center,
+		linear-gradient(var(--bg-colour) calc(var(--square-space) - var(--square-size)), transparent 1%) top center,
+        var(--dot-colour);
+    background-size: var(--square-space) var(--square-space);
+    animation: colour-animation 20s linear infinite;
+}
+
+@keyframes colour-animation {
+    0% { background-size: var(--square-space) var(--square-space); }
+    50% { background-size: calc(var(--square-space) + var(--square-size)) calc(var(--square-space) + var(--square-size)); }
+    100% { background-size: var(--square-space) var(--square-space); }
+}
+
 #body{
     border: none;
     margin: none;
@@ -5,6 +28,8 @@
     width:100%;
     overflow-x: hidden;
 }
+
+
 h1 {
     color: #0033cc;
     font-family: 'Patrick Hand', cursive;
@@ -15,6 +40,7 @@ h1 {
     margin-bottom: 0em;
     text-align:center;
 }
+
 h2 {
     font-family: 'Homenaje', sans-serif;
     padding-bottom: 1em;
@@ -22,6 +48,7 @@ h2 {
     font-size: 2em;
     text-align:center;
 }
+
 nav.top-bar {
     background-color: none;
     position: fixed;
@@ -35,6 +62,7 @@ nav.top-bar {
     z-index: 101;
     height: 2em;
 }
+
 .button-top a {
     max-height: 1.5em;
     max-width: 5em;
@@ -51,25 +79,32 @@ nav.top-bar {
     letter-spacing: 2px;
     color: #002699;
 }
+
 .top-logo>img { 
     width: auto;
     height: 1.5em;
 }
+
 .button-top:hover{
     color: black;
 }
+
 .top-bar #name-logo {
     float: left;
 }
+
 .top-bar #projects-icon {
     float: right;
 }
+
 #intro {
     padding-top: 5em;
 }
+
 #button-links{
     padding-bottom: 6em;
 }
+
 .container {
     padding-left: 5em;
     padding-right: 5em;
@@ -77,6 +112,7 @@ nav.top-bar {
     justify-content: center;
     text-align: center;
 }
+
 .button {
     font-family: 'Patrick Hand', cursive;
     min-width: 2em;
@@ -93,14 +129,17 @@ nav.top-bar {
     letter-spacing: .1em;
     font-size: 1.7em;
 }
+
 .button:hover .link{
     color:#33cccc;
     font-weight:light;
 }
+
 .link{
     color: blue; 
     text-decoration:none;
 }
+
 #projects-intro{
     color: black;
     font-family: 'Patrick Hand', cursive;
@@ -109,16 +148,19 @@ nav.top-bar {
     letter-spacing: .02em;
     position: relative;
 }
+
 .projects-title>p{
     -webkit-margin-before:0em;
     -webkit-margin-after:0em;
 }
+
 .projects-title>img{
     padding-top: .5em;
     bottom: 0;
     max-height: 1.5em;
     width:auto;
 }
+
 hr {
     width: 75%;
     size: 10px;
@@ -136,26 +178,29 @@ hr {
 .container1 h3:first-of-type, h4:first-of-type {
     -webkit-margin-before:0em;
 }
+
 h3 {
     -webkit-margin-after:0em;
     float: left;
     text-transform: uppercase;
 }
+
 h4 {
     -webkit-margin-after:0em;
     float: right;
     font-weight: lighter;
 }
+
 .container1 hr{
     visibility: hidden;
     width: 100%;
 }
+
 .container1 p{
     -webkit-margin-before:0em;
     -webkit-margin-after: 1.5em;
 }
+
 .container1 p::first-line{
     color:blue;
 }
-
-
